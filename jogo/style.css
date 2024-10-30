@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+
+}
+.light {
+    font-optical-sizing: auto;
+    font-weight: 300; /* Escolha um peso entre 100 e 900 */
+    font-style: normal;
+    font-variation-settings: "SOFT" 0, "WONK" 0;
+    margin-left: 40px;
+}
+.regular {
+    font-optical-sizing: auto;
+    font-weight: 500; /* Escolha um peso entre 100 e 900 */
+    font-style: normal;
+    font-variation-settings: "SOFT" 0, "WONK" 0;
+    line-height: 1.8;
+}
+.bold {
+    font-optical-sizing: auto;
+    font-weight: 800; /* Escolha um peso entre 100 e 900 */
+    font-style: normal;
+    font-variation-settings: "SOFT" 0, "WONK" 0;
+    line-height: 1.8;
+}
+.medium-light {
+    font-optical-sizing: auto;
+    font-weight: 400; /* Escolha um peso entre 100 e 900 */
+    font-style: normal;
+    font-variation-settings: "SOFT" 0, "WONK" 0;
+    margin-left: 40px;
+    font-size: 25px;
+}
+
+header {
+    background-color: purple;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+h1 {
+    font-size: 45px;
+    margin: 20px 40px;
+    margin-top: 15px;
+}
+.poster {
+    height: 550px;
+    width: 100%;
+    margin-top: 100px;
+}
+.container1 {
+    display: flex;
+    flex-direction: row;
+}
+.esquerda {
+    width: 30%;
+    margin: 15px;
+    margin-left: 40px;
+}
+.direita {
+    width: 70%;
+    margin: 15px;
+    margin-left: 20px;
+    margin-right: 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.plataformas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 5px;
+    margin-top: 35px;
+}
+.linha {
+    justify-content: space-evenly;
+    display: flex;
+    gap: 40px;
+}
+
+.plataforma {
+    height: 55px;
+    width: 165px;
+    border-radius: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+.estrelinhas {
+    margin-bottom: 25px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.carrossel {
+    background-color: #EFE1FF;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 860px;
+    padding: 15px;
+    margin: 15px;
+    margin-bottom: 30px;
+}
+.carrossel img {
+    height: 480px;
+    width: 850px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+.carrosselzin {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 15px 0px 15px;
+    gap: 20px;
+}
+.carrosselzin img{
+    height: 125px;
+    width: 124px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.active,
+.fotinhas:hover {
+  opacity: 1;
+}
+
+.direita h2 {
+    width: 860px;
+}
+.itens {
+    margin-right: 35px;
+    display: flex;
+    white-space: nowrap;
+    width: 1400px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 35px;
+}
+.scroll-container {
+    width: 860px; /* Ajuste conforme necessário */
+    overflow-x: auto; /* Permite o scroll horizontal */
+    white-space: nowrap; /* Impede que os itens quebrem para a próxima linha */
+    scrollbar-width: thin; /* Define a largura como fina */
+    scrollbar-color: #dd9aff #f1f1f1; /* Cor do polegar e da pista (polegar primeiro) */
+}
+
+.scroll-content {
+    display: inline-block; /* Permite que os itens sejam dispostos em linha */
+}
+
+.item {
+    display: inline-block; /* Garante que os itens fiquem lado a lado */
+    width: 250px; /* Largura fixa para cada item */
+    height: 340px; /* Altura fixa para cada item */
+    background-color: #ffffff; /* Cor de fundo */
+    color: rgb(0, 0, 0); /* Cor do texto */
+    margin: 10px; /* Espaço entre os itens */
+    text-align: left; /* Centraliza o texto */
+    white-space: wrap;
+}
+.item .bold {
+    color: #906994;
+    font-size: 20px;
+}
+.recomendados {
+    width: 250px;
+    height: 200px;
+}
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.titulo {
+    width: 100%;
+    height: 100px;
+}
+footer {
+    background-color: #906994;
+    margin-top: 15px;
+}
+
+
+
