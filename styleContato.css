@@ -12,7 +12,6 @@
     font-weight: 300;
     font-style: normal;
     font-variation-settings: "SOFT" 0, "WONK" 0;
-    margin-left: 40px;
 }
 .regular {
     font-optical-sizing: auto;
@@ -33,14 +32,183 @@
     font-weight: 400; 
     font-style: normal;
     font-variation-settings: "SOFT" 0, "WONK" 0;
-    margin-left: 40px;
     font-size: 25px;
+}
+.menu {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d6a9d9;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 125px;
+    margin-left: 30px;
+}
+
+.btmenu {
+    width: 100px;
+    height: 70px;
+    background-color: transparent;
+    margin-right: 50px;
+    border: 0;
+}
+
+.icon_menu {
+    width: 100px;
 }
 
 header {
+    height: 100px;
+}
+.menu {
     background-color: purple;
     height: 100px;
     position: fixed;
     width: 100%;
     z-index: 1000;
 }
+.section1 {
+    height: 260px;
+    background-color: #906994;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+h1 {
+    margin-left: 100px;
+    font-size: 25px;
+}
+h2 {
+    margin-left: 25px;
+    text-decoration: underline;
+}
+.esquerda h1{
+    margin-left: 30px;
+}
+.esquerda {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 15px;
+    margin-left: 60px;
+    gap: 50px;
+    height: 600px;
+
+}
+.direita {
+    width: 65%;
+    margin: 15px;
+    margin-left: 80px;
+    margin-right: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section2 {
+    display: flex;
+}
+input {
+    background-color: #e4d0e4;
+    color: #333;
+    height: 45px;
+    width: 700px;
+    padding: 0 15px;
+}
+textarea {
+    resize: none;
+    background-color: #e4d0e4;
+    color: #333;
+    height: 450px;
+    width: 730px;
+}
+h4 {
+    width: 700px;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+.questao {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 15px;
+}
+.enviando {
+    width: 730px;
+    margin-bottom: 35px;
+}
+.enviar {
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin: 15px 0;
+    background-color: #e4d0e4;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    line-height: 1.8;
+    font-size: 20px;
+    cursor: pointer;
+}
+footer {
+        background-color: #d6a9d9;
+        height: 450px;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        color: white;
+}
+.junte {
+    font-size: 28px;
+    color: white;
+    margin-left: 100px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.trabalhe {
+    font-size: 25px;
+    color: white;
+    margin-left: 100px;
+    font-weight: 500;
+}
+
+.icon {
+    width: 60px;
+    margin-left: 20px;
+}
+
+.junto {
+    margin-top: 60px;
+}
+
+.coisos {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 300px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+h3 {
+    font-size: 35px;
+    color: white;
+}
+
+hr {
+    border-top: 5px solid white;
+    width: 350px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.contato {
+    font-size: 30px;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
