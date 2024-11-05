@@ -45,7 +45,7 @@ header {
     z-index: 1000;
 }
 h1 {
-    font-size: 45px;
+    font-size: 55px;
     margin: 20px 40px;
     margin-top: 15px;
 }
@@ -114,6 +114,7 @@ h2 {
     padding: 20px 15px;
     margin: 15px;
     margin-bottom: 30px;
+    position: relative;
 }
 .carrossel img {
     height: 480px;
@@ -200,6 +201,15 @@ footer {
     background-color: #906994;
     margin-top: 15px;
 }
+.classificacao {
+    z-index: 10;
+    position: absolute;
+    max-height: 85px;
+    max-width: 85px;
+    right: 23px;
+    bottom: 170px;
+}
+
 
 
 
