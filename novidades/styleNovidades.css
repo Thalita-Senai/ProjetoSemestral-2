@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+
+}
+.light {
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "SOFT" 0, "WONK" 0;
+}
+.regular {
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "SOFT" 0, "WONK" 0;
+    line-height: 1.8;
+}
+.bold {
+    font-optical-sizing: auto;
+    font-weight: 700; 
+    font-style: normal;
+    font-variation-settings: "SOFT" 0, "WONK" 0;
+    line-height: 1.8;
+}
+.medium-light {
+    font-optical-sizing: auto;
+    font-weight: 400; 
+    font-style: normal;
+    font-variation-settings: "SOFT" 0, "WONK" 0;
+}
+
+header {
+    height: 100px;
+}
+.menu {
+    background-color: purple;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.container1 {
+    margin: 0px 50px;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.genero {
+   border-radius: 25px;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   padding: 5px 10px;
+   margin: 5px 0px 5px;
+}
+.linha {
+    display: flex;
+    gap: 8px;
+    overflow: hidden;
+}
+.console.grande {
+    background-color: rgb(4, 144, 135);
+    width: 90px;
+}
+.console {
+    background-color: rgb(4, 144, 135);
+    width: 70px;
+}
+.lancamento.grande {
+    background-color: rgb(131, 80, 17);
+    width: 100px;
+}
+.lancamento {
+    background-color: rgb(131, 80, 17);
+    width: 110px;
+}
+.xbox.grande {
+    background-color: green;
+    width: 80px;
+}
+.xbox {
+    background-color: green;
+    width: 50px;
+}
+.indie.grande {
+    background-color: blueviolet;
+    width: 80px;
+}
+.indie {
+    background-color: blueviolet;
+    width: 45px;
+
+}
+.steam.grande {
+    background-color: orange;
+    width: 90px;
+}
+.steam {
+    background-color: orange;
+    width: 60px;
+}
+.pc.grande {
+    background-color: rgb(70, 76, 157);
+    width: 45px;
+}
+.pc {
+    background-color: rgb(70, 76, 157);
+    width: 25px;
+}
+h5 {
+    font-size: 18px;
+    color: white;
+    -webkit-user-drag: none; 
+    -moz-user-select: none; 
+    cursor: pointer;
+}
+p {
+    font-size: 20px;
+    margin: 15px 0px;
+}
+h2 {
+    font-size: 15px;
+    margin: 5px 0;
+    width: 340px;
+    height: 80px;
+    color: #333;
+}
+.imagemzona {
+    height: 500px;
+    width: 100%;
+    object-fit: cover ;
+    justify-content: center;
+    user-select: none;    
+    -webkit-user-drag: none; 
+    -moz-user-select: none; 
+}
+.container2 {
+    margin: 35px 20px;
+}
+h1 {
+    font-size: 25px;
+    margin-bottom: 25px;
+    margin-left: 50px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+h4 {
+    font-size: 12px;
+    color: white;
+    user-select: none;   
+    -webkit-user-drag: none; 
+    -moz-user-select: none; 
+    cursor: pointer;
+}
+h6 {
+    font-size: 15px;
+    text-decoration: underline;
+    margin-left: 5px;
+    margin-top: 15px;
+    font-optical-sizing: auto;
+    font-weight: 500; 
+    font-style: normal;
+    font-variation-settings: "SOFT" 0, "WONK" 0;
+    line-height: 1.8;
+}
+.carrossel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.fileira {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    width: 100%;
+    gap: 35px;
+}
+
+.fileira::-webkit-scrollbar {
+    display: none; 
+}
+
+.imagem {
+    height: 250px;
+    width: 340px;
+    user-select: none;      
+    -webkit-user-drag: none; 
+    -moz-user-select: none;  
+    object-fit: cover;
+}
+
+.noticia {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+}
+
+.saiba, h6 {
+    font-size: 15px;
+    margin-left: 5px;
+    margin-top: 15px;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    line-height: 1.8;
+    color: black;
+}
+
+.seta-esquerda,
+.seta-direita {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10;
+    margin: 10px;
+}
+.setas {
+    height: 35px;
+    width: 45px;
+    object-fit: cover;
+}
+button {
+    background-color: white;
+}
+
+
+
+
+
+
+
+footer {
+    background-color: blueviolet;
+}
