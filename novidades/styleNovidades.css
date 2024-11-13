@@ -63,8 +63,26 @@ header {
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
-    height: 80px;
+    height: 65px;
     margin-top: 5px;
+}
+.epic.grande {
+    background-color: rgb(183, 149, 53);
+    width: 65px;
+}
+.epic {
+    background-color: rgb(183, 149, 53);
+    width: 45px;
+    height: 20px;
+}
+.mobile.grande {
+    background-color: rgb(240, 57, 151);
+    width: 60px;
+}
+.mobile {
+    background-color: rgb(240, 57, 151);
+    width: 50px;
+    height: 20px;
 }
 .console.grande {
     background-color: rgb(4, 144, 135);
@@ -141,7 +159,7 @@ h2 {
 }
 .imagemzona {
     height: 500px;
-    width: 100%;
+    width: 95%;
     object-fit: cover ;
     justify-content: center;
     user-select: none;    
@@ -156,7 +174,6 @@ h1 {
     margin-bottom: 25px;
     margin-left: 50px;
     text-decoration: underline;
-    text
     text-decoration-thickness: 2px;
 }
 h4 {
@@ -183,6 +200,9 @@ h6 {
     align-items: center;
     position: relative;
     margin-bottom: 45px;
+}
+a {
+    text-underline-offset: 3px;
 }
 
 .fileira {
@@ -222,6 +242,9 @@ h6 {
     line-height: 1.8;
     color: black;
 }
+.saiba:hover {
+    opacity: 0.7;
+}
 
 .seta-esquerda,
 .seta-direita {
@@ -235,6 +258,7 @@ h6 {
 .setas {
     height: 35px;
     width: 45px;
+    margin: 0px 5px;
     object-fit: cover;
     transition: filter 0.2s ease;
 }

@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function scrollEsquerda(button) {
         const fileira = button.closest('.carrossel-container').querySelector('.fileira');
         fileira.scrollBy({
-            left: -800,
+            left: -1120,
             behavior: 'smooth'
         });
     }
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function scrollDireita(button) {
         const fileira = button.closest('.carrossel-container').querySelector('.fileira');
         fileira.scrollBy({
-            left: 800,
+            left: 1120,
             behavior: 'smooth'
         });
     }
@@ -50,6 +50,34 @@ document.addEventListener('DOMContentLoaded', function () {
     window.scrollEsquerda = scrollEsquerda;
     window.scrollDireita = scrollDireita;
 });
+function scrollToSteam() {
+    const destino = document.getElementById("steam");
+    destino.scrollIntoView({ behavior: "smooth" });
+}
+function scrollToEpic() {
+    const destino = document.getElementById("epic");
+    destino.scrollIntoView({ behavior: "smooth" });
+}
+function scrollToLancamento() {
+    const destino = document.getElementById("lancamento");
+    destino.scrollIntoView({ behavior: "smooth" });
+}
+function scrollToPC() {
+    const destino = document.getElementById("pc");
+    destino.scrollIntoView({ behavior: "smooth" });
+}
+function scrollToConsole() {
+    const destino = document.getElementById("console");
+    destino.scrollIntoView({ behavior: "smooth" });
+}
+function scrollToMobile() {
+    const destino = document.getElementById("mobile");
+    destino.scrollIntoView({ behavior: "smooth" });
+}
+function scrollToIndie() {
+    const destino = document.getElementById("indie");
+    destino.scrollIntoView({ behavior: "smooth" });
+}
 
 
 
