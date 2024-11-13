@@ -1,17 +1,14 @@
-const gallery = document.querySelector('.gallery');
-const items = Array.from(document.querySelectorAll('.gallery-item'));
-let totalWidth = 0;
+// Pausar a animação ao passar o mouse sobre o carrossel
+document.querySelector('.gallery-container').addEventListener('mouseover', () => {
+    document.querySelector('.gallery').style.animationPlayState = 'paused';
+});
+  
+// Continuar a animação ao sair com o mouse
+document.querySelector('.gallery-container').addEventListener('mouseleave', () => {
+    document.querySelector('.gallery').style.animationPlayState = 'running';
+});
 
-// Clona os itens até ter largura suficiente para dar um loop
-while (totalWidth < gallery.clientWidth * 2) {
-  items.forEach(item => {
-    const clone = item.cloneNode(true);
-    gallery.appendChild(clone);
-    totalWidth += item.offsetWidth + 30; // Inclui o gap
-  });
-}
-
-
+// Clonando os itens da galeria para criar o efeito de loop
 document.addEventListener('DOMContentLoaded', function () {
     let isDown = false;
     let startX;
@@ -63,35 +60,19 @@ document.addEventListener('DOMContentLoaded', function () {
     // Expondo as funções globalmente para os botões de seta
     window.scrollEsquerda = scrollEsquerda;
     window.scrollDireita = scrollDireita;
+
+    // Clonando os itens da galeria
+    const gallery = document.querySelector('.gallery');
+    const items = gallery.querySelectorAll('.gallery-item');
+
+    // Clonando todos os itens e adicionando ao final
+    items.forEach(item => {
+        const clone = item.cloneNode(true);
+        gallery.appendChild(clone);
+    });
 });
-function scrollToSteam() {
-    const destino = document.getElementById("steam");
-    destino.scrollIntoView({ behavior: "smooth" });
-}
-function scrollToEpic() {
-    const destino = document.getElementById("epic");
-    destino.scrollIntoView({ behavior: "smooth" });
-}
-function scrollToLancamento() {
-    const destino = document.getElementById("lancamento");
-    destino.scrollIntoView({ behavior: "smooth" });
-}
-function scrollToPC() {
-    const destino = document.getElementById("pc");
-    destino.scrollIntoView({ behavior: "smooth" });
-}
-function scrollToConsole() {
-    const destino = document.getElementById("console");
-    destino.scrollIntoView({ behavior: "smooth" });
-}
-function scrollToMobile() {
-    const destino = document.getElementById("mobile");
-    destino.scrollIntoView({ behavior: "smooth" });
-}
-function scrollToIndie() {
-    const destino = document.getElementById("indie");
-    destino.scrollIntoView({ behavior: "smooth" });
-}
+
+
 
 
 
