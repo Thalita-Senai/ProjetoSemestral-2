@@ -52,12 +52,102 @@ header {
     flex-direction: column;
     margin-top: 15px;
 }
+.gallery-container {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+.gallery {
+    display: flex;
+    animation: scroll 15s linear infinite;
+    gap: 30px;
+}
+  
+  .gallery-item {
+    min-width: 630px;
+    height: 320px;
+    background-color: #eee;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    background-color: rgb(250, 231, 253);
+  }
+.textin {
+    width: 490px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+}
+.texto {
+    height: 160px;
+}
+.manchete {
+    font-size: 18px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    
+}
+.materia {
+    font-weight: 400;
+    margin-top: -5px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.textin h4 {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+ 
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-100%)); }
+}
+
+.img img{
+    height: 320px;
+    width: 210px;
+}
+.data {
+    font-size: 15px;
+    color: #892790;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+.butao {
+    cursor: pointer;
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: rgb(159, 38, 186);
+    width: 170px;
+    height: 40px;
+    border-radius: 20px;
+    transition: box-shadow 0.3s ease;
+}
+.butao a{
+    color: white;
+    text-decoration: none;
+}
+.butao:hover {
+    box-shadow: 1px 3px 8px #a4a4a4;
+}
+  
 .genero {
    border-radius: 25px;
    align-items: center;
    justify-content: center;
    display: flex;
    padding: 5px 10px;
+   transition: filter 0.3s ease;
+}
+.genero:hover {
+    filter: brightness(0.9);
 }
 .linha {
     display: flex;
@@ -68,7 +158,8 @@ header {
 }
 .epic.grande {
     background-color: rgb(183, 149, 53);
-    width: 65px;
+    width: 45px;
+    height: 20px;
 }
 .epic {
     background-color: rgb(183, 149, 53);
@@ -78,6 +169,7 @@ header {
 .mobile.grande {
     background-color: rgb(240, 57, 151);
     width: 60px;
+    height: 15px;
 }
 .mobile {
     background-color: rgb(240, 57, 151);
@@ -86,7 +178,8 @@ header {
 }
 .console.grande {
     background-color: rgb(4, 144, 135);
-    width: 90px;
+    width: 75px;
+    height: 20px;
 }
 .console {
     background-color: rgb(4, 144, 135);
@@ -96,6 +189,7 @@ header {
 .lancamento.grande {
     background-color: rgb(131, 80, 17);
     width: 100px;
+    height: 20px;
 }
 .lancamento {
     background-color: rgb(131, 80, 17);
@@ -105,6 +199,7 @@ header {
 .xbox.grande {
     background-color: green;
     width: 80px;
+    height: 20px;
 }
 .xbox {
     background-color: green;
@@ -114,7 +209,7 @@ header {
 .indie.grande {
     background-color: blueviolet;
     width: 80px;
-    height: 30px;
+    height: 20px;
 }
 .indie {
     background-color: blueviolet;
@@ -123,7 +218,8 @@ header {
 }
 .steam.grande {
     background-color: orange;
-    width: 90px;
+    width: 60px;
+    height: 20px;
 }
 .steam {
     background-color: orange;
@@ -133,6 +229,7 @@ header {
 .pc.grande {
     background-color: rgb(70, 76, 157);
     width: 45px;
+    height: 20px;
 }
 .pc {
     background-color: rgb(70, 76, 157);
@@ -156,13 +253,6 @@ h2 {
     width: 340px;
     height: 80px;
     color: #333;
-}
-.imagemzona {
-    height: 500px;
-    width: 95%;
-    object-fit: cover ;
-    justify-content: center;
-    user-select: none;    
     -webkit-user-drag: none; 
     -moz-user-select: none; 
 }
@@ -170,11 +260,12 @@ h2 {
     margin: 35px 20px;
 }
 h1 {
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 25px;
     margin-left: 50px;
     text-decoration: underline;
     text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
 }
 h4 {
     font-size: 12px;

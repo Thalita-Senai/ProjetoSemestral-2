@@ -1,3 +1,17 @@
+const gallery = document.querySelector('.gallery');
+const items = Array.from(document.querySelectorAll('.gallery-item'));
+let totalWidth = 0;
+
+// Clona os itens até ter largura suficiente para dar um loop
+while (totalWidth < gallery.clientWidth * 2) {
+  items.forEach(item => {
+    const clone = item.cloneNode(true);
+    gallery.appendChild(clone);
+    totalWidth += item.offsetWidth + 30; // Inclui o gap
+  });
+}
+
+
 document.addEventListener('DOMContentLoaded', function () {
     let isDown = false;
     let startX;
