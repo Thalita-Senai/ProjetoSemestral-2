@@ -1,3 +1,11 @@
+document.getElementById("main").onclick = function () {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+
 // Pausar a animação ao passar o mouse sobre o carrossel
 document.querySelector('.gallery-container').addEventListener('mouseover', () => {
     document.querySelector('.gallery').style.animationPlayState = 'paused';
@@ -216,7 +224,6 @@ window.addEventListener('scroll', handleScroll);
 
 // Chama a função ao carregar a página para garantir que a div apareça se já estiver visível
 window.addEventListener('load', handleScroll);
-
 
 
 
