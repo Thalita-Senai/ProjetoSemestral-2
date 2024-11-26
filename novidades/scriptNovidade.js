@@ -14,6 +14,17 @@ document.addEventListener('DOMContentLoaded', function () {
     let startX;
     let scrollLeft;
 
+    //codigo diferente
+    let elemScroll = document.querySelector(".gallery-container");
+let elemContainer = elemScroll.querySelector(".gallery");
+let elemFilhos = Array.from(elemContainer.children);
+
+elemFilhos.forEach((item) => {
+  let elemDuplicado = item.cloneNode(true);
+  elemDuplicado.setAttribute("aria-hidden", true);
+  elemContainer.appendChild(elemDuplicado);
+});
+
     // Função de scroll para a seta esquerda
     function scrollEsquerda(button) {
         const fileira = button.closest('.carrossel-container').querySelector('.fileira');
@@ -72,6 +83,104 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
+//rolando
+
+function scrollToSteam() {
+    // Calcula a posição do topo da seção
+    const elemento = document.getElementById("steam");
+    const posicao = elemento.offsetTop; // Posição do topo da seção
+
+    // Rola para a posição, ajustando um pequeno deslocamento acima (ex: 50px)
+    window.scrollTo({
+      top: posicao - 110,  // Ajuste 50px acima
+      behavior: "smooth"  // Animação suave
+    });
+  }
+
+  function scrollToConsole() {
+    // Calcula a posição do topo da seção
+    const elemento = document.getElementById("console");
+    const posicao = elemento.offsetTop; // Posição do topo da seção
+
+    // Rola para a posição, ajustando um pequeno deslocamento acima (ex: 50px)
+    window.scrollTo({
+      top: posicao - 110,  // Ajuste 50px acima
+      behavior: "smooth"  // Animação suave
+    });
+  }
+
+  function scrollToEpic() {
+    // Calcula a posição do topo da seção
+    const elemento = document.getElementById("epic");
+    const posicao = elemento.offsetTop; // Posição do topo da seção
+
+    // Rola para a posição, ajustando um pequeno deslocamento acima (ex: 50px)
+    window.scrollTo({
+      top: posicao - 110,  // Ajuste 50px acima
+      behavior: "smooth"  // Animação suave
+    });
+  }
+
+  function scrollToPC() {
+    // Calcula a posição do topo da seção
+    const elemento = document.getElementById("pc");
+    const posicao = elemento.offsetTop; // Posição do topo da seção
+
+    // Rola para a posição, ajustando um pequeno deslocamento acima (ex: 50px)
+    window.scrollTo({
+      top: posicao - 110,  // Ajuste 50px acima
+      behavior: "smooth"  // Animação suave
+    });
+  }
+
+  function scrollToConsole() {
+    // Calcula a posição do topo da seção
+    const elemento = document.getElementById("console");
+    const posicao = elemento.offsetTop; // Posição do topo da seção
+
+    // Rola para a posição, ajustando um pequeno deslocamento acima (ex: 50px)
+    window.scrollTo({
+      top: posicao - 110,  // Ajuste 50px acima
+      behavior: "smooth"  // Animação suave
+    });
+  }
+
+  function scrollToMobile() {
+    // Calcula a posição do topo da seção
+    const elemento = document.getElementById("mobile");
+    const posicao = elemento.offsetTop; // Posição do topo da seção
+
+    // Rola para a posição, ajustando um pequeno deslocamento acima (ex: 50px)
+    window.scrollTo({
+      top: posicao - 110,  // Ajuste 50px acima
+      behavior: "smooth"  // Animação suave
+    });
+  }
+
+  function scrollToLancamento() {
+    // Calcula a posição do topo da seção
+    const elemento = document.getElementById("lancamento");
+    const posicao = elemento.offsetTop; // Posição do topo da seção
+
+    // Rola para a posição, ajustando um pequeno deslocamento acima (ex: 50px)
+    window.scrollTo({
+      top: posicao - 110,  // Ajuste 50px acima
+      behavior: "smooth"  // Animação suave
+    });
+  }
+
+  function scrollToIndie() {
+    // Calcula a posição do topo da seção
+    const elemento = document.getElementById("indie");
+    const posicao = elemento.offsetTop; // Posição do topo da seção
+
+    // Rola para a posição, ajustando um pequeno deslocamento acima (ex: 50px)
+    window.scrollTo({
+      top: posicao - 110,  // Ajuste 50px acima
+      behavior: "smooth"  // Animação suave
+    });
+  }
 
 
 

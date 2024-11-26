@@ -56,13 +56,14 @@ header {
 .gallery-container {
     overflow: hidden;
     width: 100%;
+    mask: linear-gradient(to right, transparent, red 10%, red 80%, transparent);
 }
 
 /* Galeria com a animação de rotação contínua */
 .gallery {
     display: flex;
     gap: 75px;
-    animation: rolagem 35s linear infinite;
+    animation: scrollInfinito 35s linear infinite;
     will-change: transform;
     width: max-content; /* Ajuste para garantir que a largura da galeria seja suficiente */
 }
@@ -91,16 +92,10 @@ header {
 }
 
 /* Animação de rolagem suave */
-@keyframes rolagem {
-    0% {
-        transform: translateX(0); /* Começa no início */
-    }
-    50% {
-        transform: translateX(-50%); /* Meio do ciclo */
-    }
-    100% {
-        transform: translateX(-100%); /* Fim do ciclo */
-    }
+@keyframes scrollInfinito {
+    to {
+        transform: translateX(calc(-50% - 5px));
+      }
 }
 
 /* Pause a animação quando o mouse passa sobre o contêiner */
