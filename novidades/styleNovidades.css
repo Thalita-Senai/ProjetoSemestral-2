@@ -412,6 +412,7 @@ button {
 .voltar:hover img{
     cursor: pointer;
 }
+.voltar
 /* Estilos da div */
 #targetDiv {
     opacity: 0; /* Começa invisível */
