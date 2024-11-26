@@ -91,96 +91,131 @@ function scrollToSteam() {
     const elemento = document.getElementById("steam");
     const posicao = elemento.offsetTop; // Posição do topo da seção
 
-    // Rola para a posição, ajustando um pequeno deslocamento acima (ex: 50px)
+
     window.scrollTo({
-      top: posicao - 110,  // Ajuste 50px acima
-      behavior: "smooth"  // Animação suave
+      top: posicao - 140, 
+      behavior: "smooth" 
     });
   }
 
   function scrollToConsole() {
-    // Calcula a posição do topo da seção
-    const elemento = document.getElementById("console");
-    const posicao = elemento.offsetTop; // Posição do topo da seção
 
-    // Rola para a posição, ajustando um pequeno deslocamento acima (ex: 50px)
+    const elemento = document.getElementById("console");
+    const posicao = elemento.offsetTop;
+
+
     window.scrollTo({
-      top: posicao - 110,  // Ajuste 50px acima
-      behavior: "smooth"  // Animação suave
+      top: posicao - 140, 
+      behavior: "smooth" 
     });
   }
 
   function scrollToEpic() {
-    // Calcula a posição do topo da seção
-    const elemento = document.getElementById("epic");
-    const posicao = elemento.offsetTop; // Posição do topo da seção
 
-    // Rola para a posição, ajustando um pequeno deslocamento acima (ex: 50px)
+    const elemento = document.getElementById("epic");
+    const posicao = elemento.offsetTop;
+
+
     window.scrollTo({
-      top: posicao - 110,  // Ajuste 50px acima
-      behavior: "smooth"  // Animação suave
+      top: posicao - 140, 
+      behavior: "smooth" 
     });
   }
 
   function scrollToPC() {
-    // Calcula a posição do topo da seção
-    const elemento = document.getElementById("pc");
-    const posicao = elemento.offsetTop; // Posição do topo da seção
 
-    // Rola para a posição, ajustando um pequeno deslocamento acima (ex: 50px)
+    const elemento = document.getElementById("pc");
+    const posicao = elemento.offsetTop; 
+
     window.scrollTo({
-      top: posicao - 110,  // Ajuste 50px acima
-      behavior: "smooth"  // Animação suave
+      top: posicao - 140,
+      behavior: "smooth"
     });
   }
 
   function scrollToConsole() {
-    // Calcula a posição do topo da seção
-    const elemento = document.getElementById("console");
-    const posicao = elemento.offsetTop; // Posição do topo da seção
 
-    // Rola para a posição, ajustando um pequeno deslocamento acima (ex: 50px)
+    const elemento = document.getElementById("console");
+    const posicao = elemento.offsetTop; 
+
+
     window.scrollTo({
-      top: posicao - 110,  // Ajuste 50px acima
-      behavior: "smooth"  // Animação suave
+      top: posicao - 140, 
+      behavior: "smooth"  
     });
   }
 
   function scrollToMobile() {
-    // Calcula a posição do topo da seção
-    const elemento = document.getElementById("mobile");
-    const posicao = elemento.offsetTop; // Posição do topo da seção
 
-    // Rola para a posição, ajustando um pequeno deslocamento acima (ex: 50px)
+    const elemento = document.getElementById("mobile");
+    const posicao = elemento.offsetTop; 
+
     window.scrollTo({
-      top: posicao - 110,  // Ajuste 50px acima
-      behavior: "smooth"  // Animação suave
+      top: posicao - 140,
+      behavior: "smooth"
     });
   }
 
   function scrollToLancamento() {
-    // Calcula a posição do topo da seção
-    const elemento = document.getElementById("lancamento");
-    const posicao = elemento.offsetTop; // Posição do topo da seção
 
-    // Rola para a posição, ajustando um pequeno deslocamento acima (ex: 50px)
+    const elemento = document.getElementById("lancamento");
+    const posicao = elemento.offsetTop;
+
+
     window.scrollTo({
-      top: posicao - 110,  // Ajuste 50px acima
-      behavior: "smooth"  // Animação suave
+      top: posicao - 140,
+      behavior: "smooth"
     });
   }
 
   function scrollToIndie() {
-    // Calcula a posição do topo da seção
     const elemento = document.getElementById("indie");
-    const posicao = elemento.offsetTop; // Posição do topo da seção
+    const posicao = elemento.offsetTop; 
 
-    // Rola para a posição, ajustando um pequeno deslocamento acima (ex: 50px)
+
     window.scrollTo({
-      top: posicao - 110,  // Ajuste 50px acima
-      behavior: "smooth"  // Animação suave
+      top: posicao - 140, 
+      behavior: "smooth" 
     });
   }
+
+  function scrollToTop() {
+    // Calcula a posição do topo da seção
+    const elemento = document.getElementById("top");
+    const posicao = elemento.offsetTop; // Posição do topo da seção
+
+
+    window.scrollTo({
+      top: posicao - 140, 
+      behavior: "smooth" 
+    });
+  }
+
+
+  //div final
+ // Função para verificar se o elemento está visível na tela
+function isElementInView(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top >= 0 && rect.left >= 0 && rect.bottom <= window.innerHeight && rect.right <= window.innerWidth;
+}
+
+// Alvo da div
+const targetDiv = document.getElementById('targetDiv');
+
+// Função para verificar a visibilidade e aplicar ou remover a classe
+function handleScroll() {
+    if (isElementInView(targetDiv)) {
+        targetDiv.classList.add('visible'); // Adiciona a classe para mostrar a div com animação
+    } else {
+        targetDiv.classList.remove('visible'); // Remove a classe para esconder a div quando não estiver visível
+    }
+}
+
+// Evento de rolagem
+window.addEventListener('scroll', handleScroll);
+
+// Chama a função ao carregar a página para garantir que a div apareça se já estiver visível
+window.addEventListener('load', handleScroll);
 
 
 

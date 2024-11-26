@@ -63,7 +63,7 @@ header {
 .gallery {
     display: flex;
     gap: 75px;
-    animation: scrollInfinito 35s linear infinite;
+    animation: scrollInfinito 100s linear infinite;
     will-change: transform;
     width: max-content; /* Ajuste para garantir que a largura da galeria seja suficiente */
 }
@@ -73,12 +73,12 @@ header {
     margin: 25px 0px;
     min-width: 630px;
     height: 320px;
-    background-color: rgb(250, 231, 253);
     text-align: center;
     box-sizing: border-box;
     border-radius: 10px;
     display: flex;
     overflow: hidden;
+    border: solid 2px #333;
 }
 
 /* Estilo para as informações dentro de cada item */
@@ -89,6 +89,8 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: start;
+    overflow: visible;
+    position: relative;
 }
 
 /* Animação de rolagem suave */
@@ -114,6 +116,17 @@ header {
     margin-left: 10px;
     margin-top: 0px;
 }
+.materia {
+    font-weight: 100;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.manchete {
+    font-weight: 600;
+    font-size: 18px;
+}
+
 .butao {
     cursor: pointer;
     margin-top: 12px;
@@ -124,6 +137,9 @@ header {
     height: 40px;
     border-radius: 20px;
     transition: box-shadow 0.3s ease;
+    position: absolute;
+    bottom: 1px;
+    margin-bottom: -7px;
 }
 .butao a{
     color: white;
@@ -146,10 +162,17 @@ header {
 }
 .linha {
     display: flex;
-    gap: 8px;
+    width: 100%;
+    justify-content: left;
+    gap: 10px;
     flex-wrap: wrap;
-    height: 65px;
+    height: 30px;
     margin-top: 5px;
+}
+.horario {
+    justify-content: left;
+    width: 100%;
+    margin-top: 13px;
 }
 .epic.grande {
     background-color: rgb(183, 149, 53);
@@ -242,6 +265,11 @@ p {
     font-size: 20px;
     margin: 15px 0px;
 }
+.gallery p {
+    height: 20px;
+    margin: 0px 15px;
+    font-size: 14px;
+}
 h2 {
     font-size: 15px;
     margin: 5px 0;
@@ -254,14 +282,19 @@ h2 {
 .container2 {
     margin: 35px 20px;
 }
+.title {
+    margin-bottom: 15px;
+}
 h1 {
-    font-size: 30px;
-    margin-bottom: 25px;
-    margin-left: 50px;
+    font-size: 27px;
+    margin-bottom: 40px;
+    margin-left: 90px;
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
+    letter-spacing: 5px;
 }
+
 h4 {
     font-size: 12px;
     color: white;
@@ -328,6 +361,9 @@ a {
     line-height: 1.8;
     color: black;
 }
+.fileira a {
+    margin-top: 45px;
+}
 .saiba:hover {
     opacity: 0.7;
 }
@@ -360,7 +396,35 @@ button {
 
 
 
+.voltar {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.voltar img{
+    margin-right: 40px;
+    height: 90px;
+    width: 90px;
+    margin-bottom: 10px;
+}
+.voltar:hover img{
+    cursor: pointer;
+}
+/* Estilos da div */
+#targetDiv {
+    opacity: 0; /* Começa invisível */
+    transform: translateY(50px); /* Um pequeno deslocamento para criar o efeito de deslizamento */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* A transição suave para opacidade e movimento */
+}
 
+/* Classe para tornar a div visível */
+#targetDiv.visible {
+    opacity: 1; /* Torna a div visível */
+    transform: translateY(0); /* Retorna à posição original */
+}
 footer {
     background-color: blueviolet;
+    height: 500px;
 }
