@@ -61,14 +61,15 @@ header {
 /* Galeria com a animação de rotação contínua */
 .gallery {
     display: flex;
-    gap: 30px;
-    animation: rolagem 10s linear infinite;
+    gap: 75px;
+    animation: rolagem 35s linear infinite;
     will-change: transform;
     width: max-content; /* Ajuste para garantir que a largura da galeria seja suficiente */
 }
 
 /* Estilo de cada item da galeria */
 .gallery-item {
+    margin: 25px 0px;
     min-width: 630px;
     height: 320px;
     background-color: rgb(250, 231, 253);

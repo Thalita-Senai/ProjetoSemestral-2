@@ -96,6 +96,15 @@ h2 {
     border-radius: 20px;
     margin: 20px;
     cursor: pointer;
+
+}
+.plataformaImg {
+    transition: filter 0.3s ease;
+    transition: scale 0.3s ease;
+}
+.plataformaImg:hover {
+    filter: brightness(0.9);
+    scale: 0.95;
 }
 .estrelinhas {
     margin-bottom: 25px;
@@ -178,6 +187,11 @@ h2 {
     margin-top: 0px;
     text-align: left; /* Centraliza o texto */
     white-space: wrap;
+    text-decoration: underline transparent;
+    transition: text-decoration 300ms ease;
+}
+.item:hover {
+    text-decoration-color: #906994;
 }
 .item .bold {
     color: #906994;
