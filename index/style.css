@@ -28,11 +28,19 @@
 
 header {
     height: 100px;
+}
+
+.menuzin {
+    height: 100px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: #d6a9d9;
     margin-bottom: 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 900;
 }
 
 .logo {
@@ -275,6 +283,12 @@ hr {
     top: 20px;
     right: 45px;
     font-size: 60px;
+  }
+
+  .closebtn {
+    position: fixed;
+    z-index: 1000;
+    transform: translateY(55px);
   }
 
   @media screen and (max-height: 450px) {

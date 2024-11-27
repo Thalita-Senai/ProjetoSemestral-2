@@ -36,6 +36,69 @@
     font-size: 25px;
 }
 
+.overlay {  
+    position: fixed;
+    z-index: 1000;
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(102, 25, 110);
+    background-color: rgba(102, 25, 110, 0.8);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: absolute;
+    z-index: 1000;
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    z-index: 1000;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #f1bdf7;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover, .overlay a:focus {
+    color: white;
+    z-index: 2000;
+  }
+
+  .overlay .closebtn {
+    z-index: 1000;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  .closebtn {
+    position: fixed;
+    z-index: 1000;
+    transform: translateY(55px);
+  }
+
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
 .menuzin {
     height: 100px;
     display: flex;
@@ -54,12 +117,13 @@
     margin-left: 30px;
 }
 
-.menu2 {
+.menu {
     width: 100px;
     height: 70px;
     background-color: transparent;
     margin-right: 50px;
     border: 0;
+    z-index: 2000;
 }
 
 .icon_menu {
@@ -152,6 +216,7 @@ header {
 }
 
 .butao {
+    z-index: 810;
     cursor: pointer;
     margin-top: 12px;
     font-weight: 500;
@@ -161,7 +226,7 @@ header {
     height: 40px;
     border-radius: 20px;
     transition: box-shadow 0.3s ease;
-    position: absolute;
+    position: static;
     bottom: 1px;
     margin-bottom: -7px;
 }
@@ -400,6 +465,7 @@ a {
     font-size: 18px;
     z-index: 10;
     margin: 10px;
+    background-color: transparent;
 }
 .setas {
     height: 35px;
@@ -454,58 +520,7 @@ footer {
     height: 500px;
 }
 
-.overlay {  
-    z-index: 1000;
-    height: 0;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    background-color: rgb(102, 25, 110);
-    background-color: rgba(102, 25, 110, 0.8);
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
 
-  .overlay-content {
-    z-index: 1000;
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .overlay a {
-    z-index: 1000;
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #f1bdf7;
-    display: block;
-    transition: 0.3s;
-  }
-
-  .overlay a:hover, .overlay a:focus {
-    color: white;
-  }
-
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
-
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
-  }
 
 footer {
     background-color: #d6a9d9;
