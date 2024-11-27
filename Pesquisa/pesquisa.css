@@ -1,21 +1,21 @@
 @font-face {
     font-family: 'Montserrat';
-    src: url(font/Montserrat-VariableFont_wght.ttf);
+    src: url(../Index/font/Montserrat-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: 'Montserrat Italico';
-    src: url(font/Montserrat-Italic-VariableFont_wght.ttf);
+    src: url(../Index/font/Montserrat-Italic-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url(font/Inter-VariableFont_opsz\,wght.ttf);
+    src: url(../Index/font/Inter-VariableFont_opsz\,wght.ttf);
 }
 
 @font-face {
     font-family: 'Inter Italico';
-    src: url(font/Inter-Italic-VariableFont_opsz\,wght.ttf);
+    src: url(../Index/font/Inter-Italic-VariableFont_opsz\,wght.ttf);
 }
 
 * {
@@ -221,7 +221,7 @@ header {
     color: white;
   }
 
-  footer {
+footer {
     background-color: #d6a9d9;
     height: 450px;
     align-items: center;

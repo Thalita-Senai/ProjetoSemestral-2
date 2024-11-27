@@ -44,6 +44,9 @@
     align-items: center;
     background-color: #d6a9d9;
     margin-bottom: 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 900;
 }
 
 .logo {
@@ -66,12 +69,7 @@
 header {
     height: 100px;
 }
-.menuzin {
-    height: 100px;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-}
+
 .container1 {
     margin: 0px 50px;
     align-items: center;
@@ -457,6 +455,7 @@ footer {
 }
 
 .overlay {  
+    z-index: 1000;
     height: 0;
     width: 100%;
     position: fixed;
@@ -470,6 +469,7 @@ footer {
   }
 
   .overlay-content {
+    z-index: 1000;
     position: relative;
     top: 25%;
     width: 100%;
@@ -478,6 +478,7 @@ footer {
   }
   
   .overlay a {
+    z-index: 1000;
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
@@ -505,3 +506,67 @@ footer {
       right: 35px;
     }
   }
+
+footer {
+    background-color: #d6a9d9;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.junte {
+    font-family: 'Inter';
+    font-size: 28px;
+    color: white;
+    margin-left: 100px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.trabalhe {
+    font-family: 'Inter';
+    font-size: 25px;
+    color: white;
+    margin-left: 100px;
+    font-weight: 500;
+}
+
+.icon {
+    width: 60px;
+    margin-left: 20px;
+}
+
+.junto {
+    margin-top: 60px;
+}
+
+.coisos {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 300px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.title {
+    font-family: 'Inter';
+    font-size: 35px;
+    color: white;
+}
+
+hr {
+    border-top: 5px solid white;
+    width: 350px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.contato {
+    font-family: 'Inter';
+    font-size: 30px;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
